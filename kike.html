@@ -1,0 +1,353 @@
+<!DOCTYPE HTML>
+<HTML>
+
+<HEAD>
+    <TITLE>Kikeows</TITLE>
+    <META charset="UTF-8">
+    <LINK rel="icon" href="public/img/start.png" type="image/x-icon">
+        
+    <!-- Just like Windows ^.^ -->
+
+    <STYLE>
+        @font-face {
+            font-family: "BSOD";
+            src: url('public/font/LucidaConsole.ttf')
+        }
+
+        @font-face {
+            font-family: "ICON";
+            src: url('public/font/px_sans_nouveaux.ttf')
+        }
+
+        BODY {
+            font-family: MS Sans Serif, Sans Serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        A {
+            cursor: pointer;
+            text-decoration: none
+        }
+
+        .hidden {
+            display: none
+        }
+
+        .window {
+            background-color: #c0c0c0;
+            border: 2px outset #cfcfcf;
+            z-index: 50;
+            position: fixed
+        }
+
+        .clock {
+            background-color: #c0c0c0;
+            border: 1px inset #cfcfcf;
+            float: right;
+            text-justify: center;
+            margin-right: 4px;
+            padding: 0px 6px
+        }
+
+        .winlink {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .buttons .title {
+            cursor: move;
+            background-color: #808080;
+            font-weight: bold;
+            padding: 2px 6px;
+            font-size: 90%;
+            background-image: url("public/img/buttons.png");
+            background-repeat: no-repeat;
+            background-position: right
+        }
+
+        .window:target .title {
+            background-color: #000080;
+            color: #FFF;
+        }
+
+        .window:target {
+            z-index: 100
+        }
+
+        .start {
+            background-color: #c0c0c0;
+            border: 2px outset #cfcfcf;
+            font-size: 10pt;
+            font-weight: bold;
+            color: #000;
+            position: fixed;
+            bottom: 2px;
+            left: 2px;
+            z-index: 100;
+            padding: 0 3px
+        }
+
+        .icons {
+            position: absolute;
+            top: 20px;
+            left: 30px
+        }
+
+        .icons A {
+            margin-top: 30px;
+            margin-left: 30px
+        }
+
+        .icon-label {
+            font-family: "ICON";
+            font-size: 8px;
+            color: #fff;
+            border: 1px dotted rgba(0, 0, 0, .0);
+        }
+
+        #fire {
+            top: 100px;
+            left: 250px
+        }
+
+        #hackers {
+            top: 150px;
+            left: 350px
+        }
+
+        #faro {
+            top: 200px;
+            left: 150px
+        }
+
+        @media only screen and (max-width: 600px) {
+            #fire {
+                top: 322px;
+                left: 124px
+            }
+
+            #hackers {
+                top: 447px;
+                left: 7px
+            }
+
+            #faro {
+                top: 27px;
+                left: 98px
+            }
+        }
+
+        #minimize {
+            position: fixed;
+            bottom: 2px;
+            left: 95px;
+            z-index: 100;
+            padding: 0 5px;
+            background-color: #c0c0c0;
+            border: 2px inset #cfcfcf;
+            font-size: 10pt;
+            font-weight: bold;
+            color: #000;
+        }
+
+        #minimize.on {
+            border: 2px outset #cfcfcf
+        }
+
+        .bsod {
+            cursor: wait;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%)
+        }
+
+        #bsod {
+            display: none;
+            position: absolute;
+            z-index: 900;
+            width: 100%;
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+            background-color: #0000aa;
+            color: #FFF;
+            font-family: "BSOD";
+            font-size: 14px;
+            font-weight: bolder
+        }
+
+        #bsod:target {
+            display: block
+        }
+
+        .kikwos span {
+            text-align: center;
+            background-color: grey;
+            color: #0000AA
+        }
+    </STYLE>
+</HEAD>
+
+<BODY bgcolor="#008080">
+
+    <!-- == ICONS == -->
+
+    <DIV class="icons">
+        <A href="https://www.github.com/cosasdepuma/" target="_blank">
+            <CENTER>
+                <IMG src="public/img/github.png" alt="GitHub" width="32" height="32">
+                <BR>
+                <SPAN class="icon-label">GitHub</SPAN>
+            </CENTER>
+        </A>
+        <A href="https://www.linkedin.com/in/kikefontan/" target="_blank">
+            <CENTER>
+                <IMG src="public/img/linkedin.png" alt="LinkedIn" width="32" height="32">
+                <BR>
+                <SPAN class="icon-label">LinkedIn</SPAN>
+            </CENTER>
+        </A>
+        <A href="https://github.com/CosasDePuma/CV/raw/master/dist/curriculum.pdf" target="_blank">
+            <CENTER>
+                <IMG src="public/img/cv.png" alt="Curriculum" width="32" height="32">
+                <BR>
+                <SPAN class="icon-label">Curriculum</SPAN>
+            </CENTER>
+        </A>
+        <A href="mailto:kikefontanlorenzo@gmail.com" target="_blank">
+            <CENTER>
+                <IMG src="public/img/contact.png" alt="Contact" width="32" height="32">
+                <BR>
+                <SPAN class="icon-label">Contact</SPAN>
+            </CENTER>
+        </A>
+        <A href="./kike.html" style="margin-top: 60px;">
+            <CENTER>
+                <IMG src="public/img/kike.exe.png" alt="Program" width="32" height="32">
+                <BR>
+                <SPAN class="icon-label">kike.exe</SPAN>
+            </CENTER>
+        </A>
+    </DIV>
+
+    <!-- == WINDOWS! :) == -->
+
+    <!-- news window -->
+    <DIV id="faro" class="window buttons">
+        <A href="#faro" class="winlink">
+            <DIV id="farotitle" class="title">kike is on the news!</DIV>
+            <IMG src="public/img/faro.png" width="500px">
+        </A>
+    </DIV>
+
+    <!-- hackers window -->
+    <DIV id="hackers" class="window buttons">
+        <A href="#hackers" class="winlink">
+            <DIV id="hackerstitle" class="title">kike in the national cyber league!</DIV>
+            <IMG src="public/img/hackers.jpeg" width="500px">
+        </A>
+    </DIV>
+
+    <!-- fire window -->
+    <DIV id="fire" class="window buttons">
+        <A href="#fire" class="winlink">
+            <DIV id="firetitle" class="title">kike is on fire!</DIV>
+            <IMG src="public/img/fire.jpeg" width="400px">
+        </A>
+    </DIV>
+
+    <!-- == TASKBAR! == -->
+
+    <A class="start" href="#bsod">
+        <SPAN class="task">
+            <IMG src="public/img/start.png" width="14" height="14"> Kikeows
+        </SPAN>
+    </A>
+    <A id="minimize" onclick="minimize()">
+        kike.exe
+    </A>
+    <DIV class="window" style="bottom:0px; width:100%">
+        <!-- I think there is no problem with my hour -->
+        <SPAN class="clock">00:60</SPAN>
+    </DIV>
+
+    <!-- == :( Blue screen of Death! :( == -->
+    <DIV id="bsod">
+        <DIV class="bsod">
+            <CENTER class="kikwos"><span>KIKEOWS</span></CENTER>
+            <BR><BR>
+            <P>
+                An error has ocurred. To continue:<BR>
+                <BR>
+                Press Enter to return to Windows.<BR>
+                If it doesn't work, try pressing the key several times to see if it fixes it.<BR>
+                <BR>
+                Since it won't do any good, try pressing Enter again<BR>
+                or change the key. This is programmed laziness, so don't expect it to work.<BR>
+                <BR>
+                Error: DE : ADBEEF : K1K333
+            </P>
+        </DIV>
+    </DIV>
+
+    <SCRIPT>
+        function minimize() {
+            document.getElementById('minimize').classList.toggle('on')
+
+            document.getElementById('faro').classList.toggle('hidden')
+            document.getElementById('fire').classList.toggle('hidden')
+            document.getElementById('hackers').classList.toggle('hidden')
+            return false;
+        }
+
+        // Make the DIV element draggable:
+        makeDraggable(document.getElementById("faro"));
+        makeDraggable(document.getElementById("fire"));
+        makeDraggable(document.getElementById("hackers"));
+
+        function makeDraggable(elmnt) {
+            var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+            if (document.getElementById(elmnt.id + "title")) {
+                // if present, the title is where you move the DIV from:
+                document.getElementById(elmnt.id + "title").onmousedown = dragMouseDown;
+            } else {
+                // otherwise, move the DIV from anywhere inside the DIV:
+                elmnt.onmousedown = dragMouseDown;
+            }
+
+            function dragMouseDown(e) {
+                e = e || window.event;
+                e.preventDefault();
+                // get the mouse cursor position at startup:
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                document.onmouseup = closeDragElement;
+                // call a function whenever the cursor moves:
+                document.onmousemove = elementDrag;
+            }
+
+            function elementDrag(e) {
+                e = e || window.event;
+                e.preventDefault();
+                // calculate the new cursor position:
+                pos1 = pos3 - e.clientX;
+                pos2 = pos4 - e.clientY;
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                // set the element's new position:
+                elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+                elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+            }
+
+            function closeDragElement() {
+                // stop moving when mouse button is released:
+                document.onmouseup = null;
+                document.onmousemove = null;
+            }
+        }
+    </SCRIPT>
+</BODY>
+
+</HTML>
