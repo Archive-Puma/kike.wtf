@@ -1,0 +1,28 @@
+# ██╗  ██╗██╗██╗  ██╗███████╗   ██╗    ██╗████████╗███████╗
+# ██║ ██╔╝██║██║ ██╔╝██╔════╝   ██║    ██║╚══██╔══╝██╔════╝
+# █████╔╝ ██║█████╔╝ █████╗     ██║ █╗ ██║   ██║   █████╗  
+# ██╔═██╗ ██║██╔═██╗ ██╔══╝     ██║███╗██║   ██║   ██╔══╝  
+# ██║  ██╗██║██║  ██╗███████╗██╗╚███╔███╔╝   ██║   ██║     
+# ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚══════╝╚═╝ ╚══╝╚══╝    ╚═╝   ╚═╝     
+#                                                 .htaccess
+
+# No Directory Index
+Options All -Indexes
+
+# Header X-Powered-By
+Header always set X-Powered-By: Kike!
+
+# Force No-WWW
+RewriteCond %{HTTP_HOST} ^www\.example\.com [NC]
+RewriteRule ^(.*)$ http://example.com/ [L,R=301]
+
+# ===== SECURITY =====
+
+# CSP
+Header always set Content-Security-Policy: upgrade-insecure-requests
+
+# HTTPS
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} (www\.)?kike.wtf
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

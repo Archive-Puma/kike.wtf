@@ -1,0 +1,1764 @@
+# Robots.txt
+# ------------
+
+User-agent: *
+
+#    __      _____ ____
+#   /---__  ( (O)|/(O) )
+#    \\\\/  \___/U\___/
+#      L\       ||
+#       \\ ____|||_____
+#        \\|==|[]__/==|\-|
+#         \|* |||||\==|/-|
+#      ____| *|[][]-- |_
+#     ||EEE|__EEEE_[]_|EE\ 
+#     ||EEE|=O     O|=|EEE|
+#     \LEEE|         \|EEE|
+
+# Disallow
+# ----------
+
+Disallow: /hacker.txt
+
+# Blocked User-Agents
+# ---------------------
+
+UserAgent: 360Spider
+Disallow: /
+
+UserAgent: 404checker
+Disallow: /
+
+UserAgent: 404enemy
+Disallow: /
+
+UserAgent: 80legs
+Disallow: /
+
+UserAgent: Abonti
+Disallow: /
+
+UserAgent: Aboundex
+Disallow: /
+
+UserAgent: Acunetix
+Disallow: /
+
+UserAgent: Adidum/1.0
+Disallow: /
+
+UserAgent: ADmantX
+Disallow: /
+
+UserAgent: AdsBot-Google
+Disallow: /
+
+UserAgent: AdsBot-Google-Mobile
+Disallow: /
+
+UserAgent: AdsBot-Google-Mobile-Apps
+Disallow: /
+
+UserAgent: AfD-Verbotsverfahren
+Disallow: /
+
+UserAgent: AhrefsBot/5.0
+Disallow: /
+
+UserAgent: AIBOT
+Disallow: /
+
+UserAgent: AiHitBot
+Disallow: /
+
+UserAgent: Aipbot
+Disallow: /
+
+UserAgent: Alexibot
+Disallow: /
+
+UserAgent: Alligator
+Disallow: /
+
+UserAgent: AllSubmitter
+Disallow: /
+
+UserAgent: AlphaBot
+Disallow: /
+
+UserAgent: Anarchie
+Disallow: /
+
+UserAgent: Apexoo
+Disallow: /
+
+UserAgent: archive.org_bot
+Disallow: /
+
+UserAgent: ASPSeek
+Disallow: /
+
+UserAgent: Asterias
+Disallow: /
+
+UserAgent: Attach
+Disallow: /
+
+UserAgent: autoemailspider
+Disallow: /
+
+UserAgent: BackDoorBot
+Disallow: /
+
+UserAgent: Backlink-Ceck
+Disallow: /
+
+UserAgent: backlink-check
+Disallow: /
+
+UserAgent: BacklinkCrawler
+Disallow: /
+
+UserAgent: BackStreet
+Disallow: /
+
+UserAgent: BackWeb
+Disallow: /
+
+UserAgent: Badass
+Disallow: /
+
+UserAgent: Bandit
+Disallow: /
+
+UserAgent: Barkrowler
+Disallow: /
+
+UserAgent: BatchFTP
+Disallow: /
+
+UserAgent: Battleztar
+Disallow: /
+
+UserAgent: BBBike
+Disallow: /
+
+UserAgent: BDCbot
+Disallow: /
+
+UserAgent: BDFetch
+Disallow: /
+
+UserAgent: BetaBot
+Disallow: /
+
+UserAgent: Bigfoot
+Disallow: /
+
+UserAgent: Bitacle
+Disallow: /
+
+UserAgent: Black
+Disallow: /
+
+UserAgent: Blackboard
+Disallow: /
+
+UserAgent: BlackWidow
+Disallow: /
+
+UserAgent: BLEXBot
+Disallow: /
+
+UserAgent: BLEXBot/1.0
+Disallow: /
+
+UserAgent: Blow
+Disallow: /
+
+UserAgent: BlowFish
+Disallow: /
+
+UserAgent: Boardreader
+Disallow: /
+
+UserAgent: Bolt
+Disallow: /
+
+UserAgent: BotALot
+Disallow: /
+
+UserAgent: Brandprotect
+Disallow: /
+
+UserAgent: Brandwatch
+Disallow: /
+
+UserAgent: BREW-Applet/0x20068888
+Disallow: /
+
+UserAgent: Bubing
+Disallow: /
+
+UserAgent: Buddy
+Disallow: /
+
+UserAgent: BuiltBotTough
+Disallow: /
+
+UserAgent: BuiltWith
+Disallow: /
+
+UserAgent: Bullseye
+Disallow: /
+
+UserAgent: BunnySlippers
+Disallow: /
+
+UserAgent: BuzzSumo
+Disallow: /
+
+UserAgent: Calculon
+Disallow: /
+
+UserAgent: CATExplorador
+Disallow: /
+
+UserAgent: CazoodleBot
+Disallow: /
+
+UserAgent: CCBot
+Disallow: /
+
+UserAgent: Cegbfeieh
+Disallow: /
+
+UserAgent: CFNetwork/760.2.6
+Disallow: /
+
+UserAgent: CheeseBot
+Disallow: /
+
+UserAgent: CherryPicker
+Disallow: /
+
+UserAgent: CheTeam
+Disallow: /
+
+UserAgent: ChinaClaw
+Disallow: /
+
+UserAgent: Chlooe
+Disallow: /
+
+UserAgent: Claritybot
+Disallow: /
+
+UserAgent: Cliqzbot
+Disallow: /
+
+UserAgent: Cloud
+Disallow: /
+
+UserAgent: coccoc/1.0
+Disallow: /
+
+UserAgent: coccocbot-web
+Disallow: /
+
+UserAgent: Cogentbot
+Disallow: /
+
+UserAgent: cognitiveseo
+Disallow: /
+
+UserAgent: Collector
+Disallow: /
+
+UserAgent: com.plumanalytics
+Disallow: /
+
+UserAgent: Copier
+Disallow: /
+
+UserAgent: CopyRightCheck
+Disallow: /
+
+UserAgent: Copyscape
+Disallow: /
+
+UserAgent: Cosmos
+Disallow: /
+
+UserAgent: Craftbot
+Disallow: /
+
+UserAgent: crawl.sogou.com
+Disallow: /
+
+UserAgent: crawler.feedback
+Disallow: /
+
+UserAgent: crawler4j
+Disallow: /
+
+UserAgent: CrazyWebCrawler
+Disallow: /
+
+UserAgent: Crescent
+Disallow: /
+
+UserAgent: CSHttp
+Disallow: /
+
+UserAgent: Curious
+Disallow: /
+
+UserAgent: cURL
+Disallow: /
+
+UserAgent: Custo
+Disallow: /
+
+UserAgent: DatabaseDriverMysqli
+Disallow: /
+
+UserAgent: DataCha0s
+Disallow: /
+
+UserAgent: DBLBot
+Disallow: /
+
+UserAgent: demandbase-bot
+Disallow: /
+
+UserAgent: Demon
+Disallow: /
+
+UserAgent: Deusu
+Disallow: /
+
+UserAgent: Devil
+Disallow: /
+
+UserAgent: Digincore
+Disallow: /
+
+UserAgent: DigitalPebble
+Disallow: /
+
+UserAgent: DIIbot
+Disallow: /
+
+UserAgent: Dirbuster
+Disallow: /
+
+UserAgent: Disco
+Disallow: /
+
+UserAgent: Discobot
+Disallow: /
+
+UserAgent: Discoverybot
+Disallow: /
+
+UserAgent: DittoSpyder
+Disallow: /
+
+UserAgent: DnyzBot
+Disallow: /
+
+UserAgent: DOC
+Disallow: /
+
+UserAgent: DomainAppender
+Disallow: /
+
+UserAgent: DomainCrawler
+Disallow: /
+
+UserAgent: DomainSigmaCrawler
+Disallow: /
+
+UserAgent: DomainStatsBot
+Disallow: /
+
+UserAgent: Dotbot
+Disallow: /
+
+UserAgent: DotBot/1.1
+Disallow: /
+
+UserAgent: Download
+Disallow: /
+
+UserAgent: Download
+Disallow: /
+
+UserAgent: Dragonfly
+Disallow: /
+
+UserAgent: Drip
+Disallow: /
+
+UserAgent: DTS
+Disallow: /
+
+UserAgent: EasyDL
+Disallow: /
+
+UserAgent: Ebingbong
+Disallow: /
+
+UserAgent: eCatch
+Disallow: /
+
+UserAgent: ECCP/1.0
+Disallow: /
+
+UserAgent: Ecxi
+Disallow: /
+
+UserAgent: EirGrabber
+Disallow: /
+
+UserAgent: EMail
+Disallow: /
+
+UserAgent: EMail
+Disallow: /
+
+UserAgent: EroCrawler
+Disallow: /
+
+UserAgent: evc-batch
+Disallow: /
+
+UserAgent: EveryoneSocialBot
+Disallow: /
+
+UserAgent: Evil
+Disallow: /
+
+UserAgent: Exabot
+Disallow: /
+
+UserAgent: Exabot/3.0
+Disallow: /
+
+UserAgent: Exalead
+Disallow: /
+
+UserAgent: Express
+Disallow: /
+
+UserAgent: ExtLinksBot
+Disallow: /
+
+UserAgent: Extractor
+Disallow: /
+
+UserAgent: ExtractorPro
+Disallow: /
+
+UserAgent: Extreme
+Disallow: /
+
+UserAgent: EyeNetIE
+Disallow: /
+
+UserAgent: Ezooms
+Disallow: /
+
+UserAgent: fast
+Disallow: /
+
+UserAgent: FDM
+Disallow: /
+
+UserAgent: FemtosearchBot
+Disallow: /
+
+UserAgent: Fetch
+Disallow: /
+
+UserAgent: FHscan
+Disallow: /
+
+UserAgent: Fimap
+Disallow: /
+
+UserAgent: FlashGet
+Disallow: /
+
+UserAgent: Flunky
+Disallow: /
+
+UserAgent: Foobot
+Disallow: /
+
+UserAgent: Freeuploader
+Disallow: /
+
+UserAgent: FrontPage
+Disallow: /
+
+UserAgent: FyberSpider
+Disallow: /
+
+UserAgent: Fyrebot
+Disallow: /
+
+UserAgent: G-i-g-a-b-o-t
+Disallow: /
+
+UserAgent: GalaxyBot
+Disallow: /
+
+UserAgent: Genieo
+Disallow: /
+
+UserAgent: Genieo/1.0
+Disallow: /
+
+UserAgent: GermCrawler
+Disallow: /
+
+UserAgent: Getintent
+Disallow: /
+
+UserAgent: GetRight
+Disallow: /
+
+UserAgent: GetWeb
+Disallow: /
+
+UserAgent: Gigablast
+Disallow: /
+
+UserAgent: Gigabot
+Disallow: /
+
+UserAgent: Gigabot/1.0
+Disallow: /
+
+UserAgent: Go
+Disallow: /
+
+UserAgent: Go!Zilla
+Disallow: /
+
+UserAgent: Go-Ahead-Got-It
+Disallow: /
+
+UserAgent: Gotit
+Disallow: /
+
+UserAgent: GoZilla
+Disallow: /
+
+UserAgent: Grabber
+Disallow: /
+
+UserAgent: GrabNet
+Disallow: /
+
+UserAgent: Grafula
+Disallow: /
+
+UserAgent: GrapeFX
+Disallow: /
+
+UserAgent: GrapeshotCrawler
+Disallow: /
+
+UserAgent: GrapeshotCrawler/2.0
+Disallow: /
+
+UserAgent: GridBot
+Disallow: /
+
+UserAgent: grub-client
+Disallow: /
+
+UserAgent: GT::WWW
+Disallow: /
+
+UserAgent: Haansoft
+Disallow: /
+
+UserAgent: HaosouSpider
+Disallow: /
+
+UserAgent: Harvest
+Disallow: /
+
+UserAgent: Havij
+Disallow: /
+
+UserAgent: HEADMasterSEO
+Disallow: /
+
+UserAgent: Heritrix
+Disallow: /
+
+UserAgent: heritrix/1.12.1
+Disallow: /
+
+UserAgent: Hloader
+Disallow: /
+
+UserAgent: HMView
+Disallow: /
+
+UserAgent: HTMLparser
+Disallow: /
+
+UserAgent: HTTP::Lite
+Disallow: /
+
+UserAgent: HTTrack
+Disallow: /
+
+UserAgent: HTTrack
+Disallow: /
+
+UserAgent: Humanlinks
+Disallow: /
+
+UserAgent: HybridBot
+Disallow: /
+
+UserAgent: Iblog
+Disallow: /
+
+UserAgent: Id-search
+Disallow: /
+
+UserAgent: IDBot
+Disallow: /
+
+UserAgent: IlseBot
+Disallow: /
+
+UserAgent: Image
+Disallow: /
+
+UserAgent: Image
+Disallow: /
+
+UserAgent: IndeedBot
+Disallow: /
+
+UserAgent: Indy
+Disallow: /
+
+UserAgent: InfoNaviRobot
+Disallow: /
+
+UserAgent: InfoTekies
+Disallow: /
+
+UserAgent: instabid
+Disallow: /
+
+UserAgent: Intelliseek
+Disallow: /
+
+UserAgent: InterGET
+Disallow: /
+
+UserAgent: Internet
+Disallow: /
+
+UserAgent: InternetSeer
+Disallow: /
+
+UserAgent: internetVista
+Disallow: /
+
+UserAgent: ips-agent
+Disallow: /
+
+UserAgent: Iria
+Disallow: /
+
+UserAgent: IRLbot
+Disallow: /
+
+UserAgent: Iskanie
+Disallow: /
+
+UserAgent: IstellaBot
+Disallow: /
+
+UserAgent: IstellaBot/1.23.15
+Disallow: /
+
+UserAgent: JamesBOT
+Disallow: /
+
+UserAgent: Jbrofuzz
+Disallow: /
+
+UserAgent: JennyBot
+Disallow: /
+
+UserAgent: JetCar
+Disallow: /
+
+UserAgent: JikeSpider
+Disallow: /
+
+UserAgent: JOC
+Disallow: /
+
+UserAgent: Jorgee
+Disallow: /
+
+UserAgent: JustView
+Disallow: /
+
+UserAgent: Jyxobot
+Disallow: /
+
+UserAgent: k2spider
+Disallow: /
+
+UserAgent: Kenjin
+Disallow: /
+
+UserAgent: Keyword
+Disallow: /
+
+UserAgent: Kozmosbot
+Disallow: /
+
+UserAgent: Lanshanbot
+Disallow: /
+
+UserAgent: larbin
+Disallow: /
+
+UserAgent: LeechFTP
+Disallow: /
+
+UserAgent: LeechGet
+Disallow: /
+
+UserAgent: LexiBot
+Disallow: /
+
+UserAgent: Lftp
+Disallow: /
+
+UserAgent: LibWeb
+Disallow: /
+
+UserAgent: Libwhisker
+Disallow: /
+
+UserAgent: libwww
+Disallow: /
+
+UserAgent: Lightspeedsystems
+Disallow: /
+
+UserAgent: Likse
+Disallow: /
+
+UserAgent: Linguee
+Disallow: /
+
+UserAgent: Linkdexbot
+Disallow: /
+
+UserAgent: linkdexbot/2.2
+Disallow: /
+
+UserAgent: LinkextractorPro
+Disallow: /
+
+UserAgent: linko
+Disallow: /
+
+UserAgent: LinkpadBot
+Disallow: /
+
+UserAgent: LinkScan
+Disallow: /
+
+UserAgent: LinksManager
+Disallow: /
+
+UserAgent: LinkWalker
+Disallow: /
+
+UserAgent: LinqiaMetadataDownloaderBot
+Disallow: /
+
+UserAgent: LinqiaRSSBot
+Disallow: /
+
+UserAgent: LinqiaScrapeBot
+Disallow: /
+
+UserAgent: Lipperhey
+Disallow: /
+
+UserAgent: Litemage_walker
+Disallow: /
+
+UserAgent: Lmspider
+Disallow: /
+
+UserAgent: LNSpiderguy
+Disallow: /
+
+UserAgent: Ltx71
+Disallow: /
+
+UserAgent: lwp-request
+Disallow: /
+
+UserAgent: lwp-trivial
+Disallow: /
+
+UserAgent: LWP::Simple
+Disallow: /
+
+UserAgent: Mag-Net
+Disallow: /
+
+UserAgent: Magnet
+Disallow: /
+
+UserAgent: magpie-crawler
+Disallow: /
+
+UserAgent: Mail.RU
+Disallow: /
+
+UserAgent: Mail.RU_Bot
+Disallow: /
+
+UserAgent: Majestic12
+Disallow: /
+
+UserAgent: MarkMonitor
+Disallow: /
+
+UserAgent: MarkWatch
+Disallow: /
+
+UserAgent: Mass
+Disallow: /
+
+UserAgent: Masscan
+Disallow: /
+
+UserAgent: Mata
+Disallow: /
+
+UserAgent: MauiBot
+Disallow: /
+
+UserAgent: Meanpathbot
+Disallow: /
+
+UserAgent: Mediatoolkitbot
+Disallow: /
+
+UserAgent: mediawords
+Disallow: /
+
+UserAgent: MegaIndex.ru
+Disallow: /
+
+UserAgent: MegaIndex.ru/2.0
+Disallow: /
+
+UserAgent: Metauri
+Disallow: /
+
+UserAgent: MFC_Tear_Sample
+Disallow: /
+
+UserAgent: Microsoft.URL.Control
+Disallow: /
+
+UserAgent: MIDown
+Disallow: /
+
+UserAgent: MIIxpc
+Disallow: /
+
+UserAgent: Mister
+Disallow: /
+
+UserAgent: MJ12bot
+Disallow: /
+
+UserAgent: Mojeek
+Disallow: /
+
+UserAgent: Morfeus
+Disallow: /
+
+UserAgent: Mr.4x3
+Disallow: /
+
+UserAgent: MS
+Disallow: /
+
+UserAgent: MSFrontPage
+Disallow: /
+
+UserAgent: MSIECrawler
+Disallow: /
+
+UserAgent: Msrabot
+Disallow: /
+
+UserAgent: muhstik-scan
+Disallow: /
+
+UserAgent: Musobot
+Disallow: /
+
+UserAgent: Name
+Disallow: /
+
+UserAgent: Nameprotect
+Disallow: /
+
+UserAgent: Navroad
+Disallow: /
+
+UserAgent: NearSite
+Disallow: /
+
+UserAgent: Needle
+Disallow: /
+
+UserAgent: Nessus
+Disallow: /
+
+UserAgent: Net
+Disallow: /
+
+UserAgent: NetAnts
+Disallow: /
+
+UserAgent: Netcraft
+Disallow: /
+
+UserAgent: netEstate
+Disallow: /
+
+UserAgent: NetLyzer
+Disallow: /
+
+UserAgent: NetMechanic
+Disallow: /
+
+UserAgent: NetSpider
+Disallow: /
+
+UserAgent: Nettrack
+Disallow: /
+
+UserAgent: Netvibes
+Disallow: /
+
+UserAgent: NetZIP
+Disallow: /
+
+UserAgent: NextGenSearchBot
+Disallow: /
+
+UserAgent: Nibbler
+Disallow: /
+
+UserAgent: NICErsPRO
+Disallow: /
+
+UserAgent: Niki-bot
+Disallow: /
+
+UserAgent: Nikto
+Disallow: /
+
+UserAgent: NimbleCrawler
+Disallow: /
+
+UserAgent: Ninja
+Disallow: /
+
+UserAgent: Nmap
+Disallow: /
+
+UserAgent: NPBot
+Disallow: /
+
+UserAgent: Nutch
+Disallow: /
+
+UserAgent: Nutch-1.10
+Disallow: /
+
+UserAgent: Nutch-1.7
+Disallow: /
+
+UserAgent: oBot
+Disallow: /
+
+UserAgent: Octopus
+Disallow: /
+
+UserAgent: Offline
+Disallow: /
+
+UserAgent: Offline
+Disallow: /
+
+UserAgent: Openfind
+Disallow: /
+
+UserAgent: OpenLinkProfiler
+Disallow: /
+
+UserAgent: Openvas
+Disallow: /
+
+UserAgent: OpenVAS
+Disallow: /
+
+UserAgent: OrangeBot
+Disallow: /
+
+UserAgent: OrangeSpider
+Disallow: /
+
+UserAgent: OutclicksBot
+Disallow: /
+
+UserAgent: OutfoxBot
+Disallow: /
+
+UserAgent: Page
+Disallow: /
+
+UserAgent: page
+Disallow: /
+
+UserAgent: PageAnalyzer
+Disallow: /
+
+UserAgent: PageGrabber
+Disallow: /
+
+UserAgent: PageScorer
+Disallow: /
+
+UserAgent: Panscient
+Disallow: /
+
+UserAgent: Papa
+Disallow: /
+
+UserAgent: PaperLiBot/2.1
+Disallow: /
+
+UserAgent: Pavuk
+Disallow: /
+
+UserAgent: pcBrowser
+Disallow: /
+
+UserAgent: PECL::HTTP
+Disallow: /
+
+UserAgent: PeoplePal
+Disallow: /
+
+UserAgent: PHPCrawl
+Disallow: /
+
+UserAgent: Pi-Monster
+Disallow: /
+
+UserAgent: Picscout
+Disallow: /
+
+UserAgent: Picsearch
+Disallow: /
+
+UserAgent: PictureFinder
+Disallow: /
+
+UserAgent: Pimonster
+Disallow: /
+
+UserAgent: Pixray
+Disallow: /
+
+UserAgent: PleaseCrawl
+Disallow: /
+
+UserAgent: plumanalytics
+Disallow: /
+
+UserAgent: Pockey
+Disallow: /
+
+UserAgent: POE-Component-Client-HTTP
+Disallow: /
+
+UserAgent: Probethenet
+Disallow: /
+
+UserAgent: ProPowerBot
+Disallow: /
+
+UserAgent: ProWebWalker
+Disallow: /
+
+UserAgent: proximic
+Disallow: /
+
+UserAgent: Psbot
+Disallow: /
+
+UserAgent: psbot-page
+Disallow: /
+
+UserAgent: psbot/0.1
+Disallow: /
+
+UserAgent: Pump
+Disallow: /
+
+UserAgent: PxBroker
+Disallow: /
+
+UserAgent: PyCurl
+Disallow: /
+
+UserAgent: QueryN
+Disallow: /
+
+UserAgent: Quick-Crawler
+Disallow: /
+
+UserAgent: RankActive
+Disallow: /
+
+UserAgent: RankActiveLinkBot
+Disallow: /
+
+UserAgent: RankFlex
+Disallow: /
+
+UserAgent: RankingBot
+Disallow: /
+
+UserAgent: RankingBot2
+Disallow: /
+
+UserAgent: Rankivabot
+Disallow: /
+
+UserAgent: RankurBot
+Disallow: /
+
+UserAgent: RealDownload
+Disallow: /
+
+UserAgent: Reaper
+Disallow: /
+
+UserAgent: RebelMouse
+Disallow: /
+
+UserAgent: Recorder
+Disallow: /
+
+UserAgent: RedesScrapy
+Disallow: /
+
+UserAgent: ReGet
+Disallow: /
+
+UserAgent: RepoMonkey
+Disallow: /
+
+UserAgent: Ripper
+Disallow: /
+
+UserAgent: RocketCrawler
+Disallow: /
+
+UserAgent: Rogerbot
+Disallow: /
+
+UserAgent: s1z.ru
+Disallow: /
+
+UserAgent: SafeSearch
+Disallow: /
+
+UserAgent: SalesIntelligent
+Disallow: /
+
+UserAgent: SBIder
+Disallow: /
+
+UserAgent: scan.lol
+Disallow: /
+
+UserAgent: ScanAlert
+Disallow: /
+
+UserAgent: Scanbot
+Disallow: /
+
+UserAgent: Scrapy
+Disallow: /
+
+UserAgent: Screaming
+Disallow: /
+
+UserAgent: ScreenerBot
+Disallow: /
+
+UserAgent: Searchestate
+Disallow: /
+
+UserAgent: SearchmetricsBot
+Disallow: /
+
+UserAgent: SEOkicks
+Disallow: /
+
+UserAgent: SEOlyticsCrawler
+Disallow: /
+
+UserAgent: seoscanners
+Disallow: /
+
+UserAgent: SeoSiteCheckup
+Disallow: /
+
+UserAgent: SEOstats
+Disallow: /
+
+UserAgent: sexsearcher
+Disallow: /
+
+UserAgent: Shodan
+Disallow: /
+
+UserAgent: Siphon
+Disallow: /
+
+UserAgent: Site
+Disallow: /
+
+UserAgent: Sitebeam
+Disallow: /
+
+UserAgent: sitecheck.internetseer.com
+Disallow: /
+
+UserAgent: SiteExplorer
+Disallow: /
+
+UserAgent: Siteimprove
+Disallow: /
+
+UserAgent: SiteLockSpider
+Disallow: /
+
+UserAgent: SiteSnagger
+Disallow: /
+
+UserAgent: SiteSucker
+Disallow: /
+
+UserAgent: Sitevigil
+Disallow: /
+
+UserAgent: Slackbot-LinkExpanding
+Disallow: /
+
+UserAgent: SlySearch
+Disallow: /
+
+UserAgent: SmartDownload
+Disallow: /
+
+UserAgent: SMTBot
+Disallow: /
+
+UserAgent: Snake
+Disallow: /
+
+UserAgent: Snapbot
+Disallow: /
+
+UserAgent: Snoopy
+Disallow: /
+
+UserAgent: SocialRankIOBot
+Disallow: /
+
+UserAgent: Sogou
+Disallow: /
+
+UserAgent: Sogou
+Disallow: /
+
+UserAgent: sogouspider
+Disallow: /
+
+UserAgent: Sosospider
+Disallow: /
+
+UserAgent: Sottopop
+Disallow: /
+
+UserAgent: SpaceBison
+Disallow: /
+
+UserAgent: Spammen
+Disallow: /
+
+UserAgent: SpankBot
+Disallow: /
+
+UserAgent: Spanner
+Disallow: /
+
+UserAgent: Spbot
+Disallow: /
+
+UserAgent: spbot/4.4.2
+Disallow: /
+
+UserAgent: Spinn3r
+Disallow: /
+
+UserAgent: SputnikBot
+Disallow: /
+
+UserAgent: Sqlmap
+Disallow: /
+
+UserAgent: Sqlworm
+Disallow: /
+
+UserAgent: Sqworm
+Disallow: /
+
+UserAgent: Steeler
+Disallow: /
+
+UserAgent: Stripper
+Disallow: /
+
+UserAgent: Sucker
+Disallow: /
+
+UserAgent: Sucuri
+Disallow: /
+
+UserAgent: SuperBot
+Disallow: /
+
+UserAgent: SuperHTTP
+Disallow: /
+
+UserAgent: Surfbot
+Disallow: /
+
+UserAgent: SurveyBot
+Disallow: /
+
+UserAgent: Suzuran
+Disallow: /
+
+UserAgent: Swiftbot
+Disallow: /
+
+UserAgent: sysscan
+Disallow: /
+
+UserAgent: Szukacz
+Disallow: /
+
+UserAgent: T0PHackTeam
+Disallow: /
+
+UserAgent: T8Abot
+Disallow: /
+
+UserAgent: tAkeOut
+Disallow: /
+
+UserAgent: Teleport
+Disallow: /
+
+UserAgent: TeleportPro
+Disallow: /
+
+UserAgent: Telesoft
+Disallow: /
+
+UserAgent: Telesphoreo
+Disallow: /
+
+UserAgent: Telesphorep
+Disallow: /
+
+UserAgent: The
+Disallow: /
+
+UserAgent: TheNomad
+Disallow: /
+
+UserAgent: TightTwatBot
+Disallow: /
+
+UserAgent: Titan
+Disallow: /
+
+UserAgent: Toata
+Disallow: /
+
+UserAgent: Toweyabot
+Disallow: /
+
+UserAgent: Tracemyfile
+Disallow: /
+
+UserAgent: Trendiction
+Disallow: /
+
+UserAgent: trendiction.com
+Disallow: /
+
+UserAgent: trendiction.de
+Disallow: /
+
+UserAgent: Trendictionbot
+Disallow: /
+
+UserAgent: True_Robot
+Disallow: /
+
+UserAgent: Turingos
+Disallow: /
+
+UserAgent: Turnitin
+Disallow: /
+
+UserAgent: TurnitinBot
+Disallow: /
+
+UserAgent: TwengaBot
+Disallow: /
+
+UserAgent: Twice
+Disallow: /
+
+UserAgent: Typhoeus
+Disallow: /
+
+UserAgent: UbiCrawler
+Disallow: /
+
+UserAgent: UnisterBot
+Disallow: /
+
+UserAgent: URLy
+Disallow: /
+
+UserAgent: URLy.Warning
+Disallow: /
+
+UserAgent: Vacuum
+Disallow: /
+
+UserAgent: Vagabondo
+Disallow: /
+
+UserAgent: VB
+Disallow: /
+
+UserAgent: VCI
+Disallow: /
+
+UserAgent: VeriCiteCrawler
+Disallow: /
+
+UserAgent: VidibleScraper
+Disallow: /
+
+UserAgent: Virusdie
+Disallow: /
+
+UserAgent: VoidEYE
+Disallow: /
+
+UserAgent: Voil
+Disallow: /
+
+UserAgent: Voltron
+Disallow: /
+
+UserAgent: Wallpapers/3.0
+Disallow: /
+
+UserAgent: WallpapersHD
+Disallow: /
+
+UserAgent: WASALive-Bot
+Disallow: /
+
+UserAgent: WBSearchBot
+Disallow: /
+
+UserAgent: WBSearchBot/1.1
+Disallow: /
+
+UserAgent: Web
+Disallow: /
+
+UserAgent: Web
+Disallow: /
+
+UserAgent: Web
+Disallow: /
+
+UserAgent: Web
+Disallow: /
+
+UserAgent: Web
+Disallow: /
+
+UserAgent: Web
+Disallow: /
+
+UserAgent: Web
+Disallow: /
+
+UserAgent: Web
+Disallow: /
+
+UserAgent: Webalta
+Disallow: /
+
+UserAgent: WebAuto
+Disallow: /
+
+UserAgent: WebBandit
+Disallow: /
+
+UserAgent: WebCollage
+Disallow: /
+
+UserAgent: WebCopier
+Disallow: /
+
+UserAgent: WEBDAV
+Disallow: /
+
+UserAgent: WebEnhancer
+Disallow: /
+
+UserAgent: WebFetch
+Disallow: /
+
+UserAgent: WebFuck
+Disallow: /
+
+UserAgent: WebGo
+Disallow: /
+
+UserAgent: WebImageCollector
+Disallow: /
+
+UserAgent: WebLeacher
+Disallow: /
+
+UserAgent: WebmasterWorldForumBot
+Disallow: /
+
+UserAgent: webmeup-crawler
+Disallow: /
+
+UserAgent: WebPix
+Disallow: /
+
+UserAgent: WebReaper
+Disallow: /
+
+UserAgent: WebSauger
+Disallow: /
+
+UserAgent: Webshag
+Disallow: /
+
+UserAgent: Website
+Disallow: /
+
+UserAgent: WebsiteExtractor
+Disallow: /
+
+UserAgent: WebsiteQuester
+Disallow: /
+
+UserAgent: Webster
+Disallow: /
+
+UserAgent: WebStripper
+Disallow: /
+
+UserAgent: WebSucker
+Disallow: /
+
+UserAgent: WebWhacker
+Disallow: /
+
+UserAgent: WebZIP
+Disallow: /
+
+UserAgent: WeSEE
+Disallow: /
+
+UserAgent: wget
+Disallow: /
+
+UserAgent: Whack
+Disallow: /
+
+UserAgent: Whacker
+Disallow: /
+
+UserAgent: Whatweb
+Disallow: /
+
+UserAgent: Who.is
+Disallow: /
+
+UserAgent: Widow
+Disallow: /
+
+UserAgent: WinHttp
+Disallow: /
+
+UserAgent: WinHTTrack
+Disallow: /
+
+UserAgent: WiseGuys
+Disallow: /
+
+UserAgent: WISENutbot
+Disallow: /
+
+UserAgent: Wonderbot
+Disallow: /
+
+UserAgent: Woobot
+Disallow: /
+
+UserAgent: woobot/2.0
+Disallow: /
+
+UserAgent: Wotbox
+Disallow: /
+
+UserAgent: Wprecon
+Disallow: /
+
+UserAgent: WPScan
+Disallow: /
+
+UserAgent: WWW-Collector-E
+Disallow: /
+
+UserAgent: WWW-Mechanize
+Disallow: /
+
+UserAgent: WWW::Mechanize
+Disallow: /
+
+UserAgent: WWWOFFLE
+Disallow: /
+
+UserAgent: x09Mozilla
+Disallow: /
+
+UserAgent: x22Mozilla
+Disallow: /
+
+UserAgent: Xaldon
+Disallow: /
+
+UserAgent: Xaldon_WebSpider
+Disallow: /
+
+UserAgent: Xenu
+Disallow: /
+
+UserAgent: Xenu
+Disallow: /
+
+UserAgent: xpymep1.exe
+Disallow: /
+
+UserAgent: YandexBot/3.0
+Disallow: /
+
+UserAgent: YoudaoBot
+Disallow: /
+
+UserAgent: Zade
+Disallow: /
+
+UserAgent: Zao
+Disallow: /
+
+UserAgent: Zauba
+Disallow: /
+
+UserAgent: zauba.io
+Disallow: /
+
+UserAgent: Zealbot
+Disallow: /
+
+UserAgent: Zermelo
+Disallow: /
+
+UserAgent: Zeus
+Disallow: /
+
+UserAgent: zgrab
+Disallow: /
+
+UserAgent: Zitebot
+Disallow: /
+
+UserAgent: ZmEu
+Disallow: /
+
+UserAgent: ZoominfoBot
+Disallow: /
+
+UserAgent: ZumBot
+Disallow: /
+
+UserAgent: ZyBORG
+Disallow: /
