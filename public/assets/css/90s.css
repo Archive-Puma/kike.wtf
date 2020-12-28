@@ -1,18 +1,18 @@
 * { margin: 0; padding: 0; font-family: "Comic Sans MS", sans-serif }
 
 @keyframes marquee { from { transform: translate(0, 0) } to { transform: translate(-100%, 0) } }
-.marquee { background-color: #0f036d; color: #fcfcfc; width: 700px; overflow: hidden; box-sizing: border-box; font-style: italic; font-size: 18pt; line-height: 30px; white-space: nowrap; }
+.marquee { background-color: #0f036d; color: #fcfcfc; width: 600px; overflow: hidden; box-sizing: border-box; font-style: italic; font-size: 18px; line-height: 30px; white-space: nowrap; }
 .marquee > p { --animation: marquee 15s linear 0s infinite; display: inline-block; padding-left: 100%;
     -webkit-animation: var(--animation); -moz-animation: var(--animation); -o-animation: var(--animation); animation: var(--animation) }
 
 body { background-color: #000; background-image: url(../img/90s_bg.gif); }
-main { width: 99vw; margin: 40px 0 }
+main { width: 100%; margin-top: 40px }
 main, .hacking { display: flex; justify-content: center; align-items: center; flex-direction: column }
-main > .title { width: 600px }
-main > .line { width: 800px; height: 1px; margin: 0 0 50px 0 }
+main > .title { width: 500px }
+main > .line { width: 600px; height: 1px; margin: 0 0 50px 0 }
 main .ad { width: 500px }
 
-h1 { font-style: italic; font-weight: bold; font-size: 50px; text-transform: uppercase; margin: 50px 0 }
+h1 { font-style: italic; font-weight: bold; font-size: 40px; text-transform: uppercase; margin: 50px 0 }
 h1 > span::after { content: "!!!" }
 h1 > img { margin: 0 50px }
 h1 > img:last-child { transform: rotateZ(180deg); }
@@ -21,7 +21,7 @@ h1 > img:last-child { transform: rotateZ(180deg); }
 .links a { color: yellow; text-decoration: none; font-size: 20px }
 .links a:not(:last-child)::after { content:" | "; color: red }
 
-.expositor { display: flex; flex-direction: row; justify-content: center; align-items: center }
+.expositor, h1 { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center }
 .expositor > a { display: flex; flex-direction: column; align-items: center; text-decoration: none; }
 .socials > .expositor > a:first-child, .hacking > .expositor > a { margin: 0 20px }
 .expositor img + span { margin: 30px 0 }
@@ -30,7 +30,27 @@ h1 > img:last-child { transform: rotateZ(180deg); }
 .hacking * { color: red }
 
 .socials > .expositor img { height: 150px }
-.socials > .expositor img + span { font-size: 20px;}
+.socials > .expositor img + span { font-size: 16px;}
 
 .hacking > .expositor img { height: 60px }
-.hacking > .expositor img + span { font-size: 16px;}
+.hacking > .expositor img + span { font-size: 14px;}
+
+/* Mobile */
+
+@media only screen and (max-width: 620px) {
+    main .ad,
+    main > .line,
+    main > .title,
+    .socials,
+    .hacking,
+    .expositor,
+    .marquee { width: 90%; margin-left: auto; margin-right: auto }
+
+    .marquee { font-size: 16px }
+    .links { margin-top: 0 }
+    h1 { font-size: 28px }
+    h1 > img { margin: 0 20px; width: 35px }
+
+    .socials > .expositor img { height: 100px }
+    .hacking > .expositor img { height: 40px }
+}
