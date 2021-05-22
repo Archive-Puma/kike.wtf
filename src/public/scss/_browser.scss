@@ -1,0 +1,8 @@
+@charset 'UTF-8';
+
+@mixin animation($params) {
+    -webkit-animation: $params;
+       -moz-animation: $params;
+         -o-animation: $params;
+            animation: $params;
+}

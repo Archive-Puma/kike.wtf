@@ -1,0 +1,175 @@
+@charset 'UTF-8';
+@use 'browser';
+@import url(https://allfont.es/allfont.css?fonts=comic-sans-ms);
+
+/* ---- Retro stylesheet ---- */
+
+// Animations
+
+@keyframes marquee {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(-100%, 0);
+    }
+}
+
+// Content
+
+body {
+    color: yellow;
+    background: {
+        color: #000;
+        image: url(../img/retro/bg.gif);
+    }
+    font: {
+        size: 16px;
+        family: 'Comic Sans MS', Arial, Helvetica, sans-serif;
+    }
+
+    > main {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px;
+
+        a {
+            color: lime;
+        }
+
+        > .title, > section.hacking > .banner {
+            width: 95%;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+
+        > .links > a {
+            color: inherit;
+            font-size: 18px;
+
+            &:not(:last-child)::after {
+                color: red;
+                content: ' | ';
+                font-size: 20px;
+            }
+        }
+
+        > .line {
+            height: 1px;
+            width: 97%;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        > section {
+            &, > h1, > .expositor, > .expositor > a {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center
+            }
+
+            flex-direction: column;
+
+            > h1 {
+                font-size: 25px;
+                margin: 20px 0 40px 0;
+
+                > span {
+                    margin: 0 30px;
+                    text-transform: uppercase;
+
+                    &::after{
+                        content: '!!!';
+                        font-style: italic;
+                    }
+                }
+
+                > img:last-of-type {
+                    transform: rotateZ(180deg);
+                }
+            }
+
+            > .expositor {
+                max-width: 600px;
+
+                > a {
+                    margin: 0px 20px;
+                    flex-direction: column;
+
+                    > img {
+                        height: 40px;
+
+                        & + span {
+                            margin: 15px 0;
+                        }
+                    }
+                }
+                
+            }
+
+            &.socials {
+                > .marquee {
+                    width: 90%;
+                    max-width: 600px;
+                    color: #fcfcfc;
+                    background-color: #0f036d;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    line-height: 30px;
+                    font-size: 18px;
+                    margin: 20px auto;
+
+                    > p {
+                        padding-left: 100%;
+                        display: inline-block;
+                        @include browser.animation(marquee 15s linear 0s infinite);
+                    
+                        > span {
+                            font-style: italic;
+                        }
+                    }
+                }
+
+                > .expositor > a {
+                    &:not(:first-of-type) {
+                        margin: 0;
+                    }
+                    
+                    > img {
+                        height: 100px;
+                    }
+                }
+            }
+
+            &.hacking > .expositor > a {
+                color: fuchsia;
+            }
+        }
+
+        @media screen and (min-width: 620px) {
+            > section > h1 {
+                font-size: 40px;
+
+                > span {
+                    margin: 0 50px;
+
+                    & + span {
+                        margin: 30px 0;
+                    }
+                }
+
+                .expositor {
+                    > a > img {
+                        height: 60px;
+                    }
+                    
+                    &.socials > a > img {
+                        height: 150px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,8 +1,6 @@
 # Robots.txt
 # ------------
 
-User-agent: *
-
 #    __      _____ ____
 #   /---__  ( (O)|/(O) )
 #    \\\\/  \___/U\___/
@@ -18,10 +16,13 @@ User-agent: *
 # Disallow
 # ----------
 
-Disallow: /hacker.txt
+User-agent: *
+Disallow: /elliotisjustascriptkittycomparedtoyou.txt
 
 # Blocked User-Agents
 # ---------------------
+
+# Make it harder...
 
 UserAgent: 360Spider
 Disallow: /
@@ -48,15 +49,6 @@ UserAgent: Adidum/1.0
 Disallow: /
 
 UserAgent: ADmantX
-Disallow: /
-
-UserAgent: AdsBot-Google
-Disallow: /
-
-UserAgent: AdsBot-Google-Mobile
-Disallow: /
-
-UserAgent: AdsBot-Google-Mobile-Apps
 Disallow: /
 
 UserAgent: AfD-Verbotsverfahren
@@ -1762,3 +1754,8 @@ Disallow: /
 
 UserAgent: ZyBORG
 Disallow: /
+
+# Flag
+# ------
+
+# KikeCTF{7h3_w0rld_15_4_d4n63r0u5_pl4c3_3ll107}
