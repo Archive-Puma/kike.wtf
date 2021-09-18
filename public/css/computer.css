@@ -1,0 +1,169 @@
+@import url('http://fonts.cdnfonts.com/css/segoe-ui-4');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.root {
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle, #c7e3f3 0%, #acd0e4 20%, #87aecb 100%);
+    font-family: 'Segoe UI', sans-serif;
+
+    display: grid;
+    grid-template-areas: "desktop" "taskbar";
+    grid-template-rows: 1fr 40px;
+}
+
+#background {
+    position: fixed;
+    right: 5px;
+    top: 0px;
+    left: 5px;
+    bottom: 40px;
+    min-width: calc(100% - 10px);
+    min-height: calc(100% - 40px);
+}
+
+.desktop__icon {
+    padding: 4px;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.desktop__icon:hover {
+    border: 1px dotted whitesmoke;
+    padding: 3px;
+}
+.desktop__icon > img {
+    width: 30px;
+    height: 30px;
+    user-select: none;
+}
+.desktop__icon > span {
+    margin-top: 5px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 11px;
+    color: #fafafa;
+    text-shadow: -1px -1px 0 #7270705d, 1px -1px 0 #7270705d, -1px 1px 0 #7270705d, 1px 1px 0 #7270705d;
+}
+
+.desktop__window {
+    width: 450px;
+    max-width: 100%;
+    background-color: white;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0, 0.808);
+       -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0, 0.808);
+            box-shadow: 0px 0px 12px 0px rgba(39, 99, 122, 0.808);
+}
+
+.desktop__window__bar {
+    padding: 6px 12px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+}
+
+.desktop__window__bar > img {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
+
+.desktop__window__bar > span {
+    font-size: 12px;
+}
+
+.desktop__window__content {
+    height: 100%;
+    padding: 50px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.desktop__window__content.welcome .welcome__msg > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.desktop__window__content.welcome span {
+    font-size: 18px;
+}
+.desktop__window__content.welcome p {
+    text-align: center;
+}
+.desktop__window__content.welcome img {
+    margin-right: 10px;
+}
+
+.taskbar {
+    grid-area: taskbar;
+    width: 100%;
+    background-color: #E5EFF9;
+    z-index: 1;
+
+    display: grid;
+    grid-template-areas: ". apps menu";
+    grid-template-columns: 80px 1fr 80px;
+}
+
+.taskbar__apps {
+    grid-area: apps;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.taskbar__apps__icon {
+    width: 35px;
+    height: 35px;
+    padding: 2px;
+    border-radius: 5px;
+}
+.taskbar__apps__icon:hover {
+    background-color: #ffffff;
+}
+
+.taskbar__apps__icon > img {
+    width: 100%;
+    height: 100%;
+}
+
+.taskbar__menu {
+    grid-area: menu;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+.taskbar__menu__time {
+    font-size: 11px;
+    user-select: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

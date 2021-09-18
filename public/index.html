@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kike Fontán</title>
+
+    <link rel="stylesheet" href="css/computer.css" />
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <div class="root">
+        <video autoplay muted id="background">
+            <source src="img/wallpaper.webm" type="video/webm">
+        </video>
+
+
+        <div id="desktop">
+            <a href="#" class="desktop__icon">
+                <img src="img/bin.png" alt="Recycle Bin" />
+                <span>Recycle Bin</span>
+            </a>
+
+            <div class="desktop__window">
+                <div class="desktop__window__bar">
+                    <img src="img/welcome.png" alt="Welcome" />
+                    <span>Welcome</span>
+                </div>
+                <div class="desktop__window__content welcome">
+                    <div class="welcome__msg">
+                        <div>
+                            <img src="img/windows.png" alt="Windows" />
+                            <span>Welcome to my new personal website!</span>
+                        </div>
+                        <br />
+                        <p>You will find some nice bunny memes here...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="taskbar">
+            <div class="taskbar__apps">
+                <a href="#" class="taskbar__apps__icon">
+                    <img src="img/windows.png" alt="Home" />
+                </a>
+            </div>
+            <div class="taskbar__menu">
+                <div class="taskbar__menu__time">
+                    <span id="hour"></span>
+                    <span id="date"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/computer.js"></script>
+</body>
+</html>
