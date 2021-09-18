@@ -1,5 +1,11 @@
 @import url('http://fonts.cdnfonts.com/css/segoe-ui-4');
 
+/*  _____________
+   /             \
+  |    GLOBALS    |
+   \_____________/
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +15,12 @@
 a {
     text-decoration: none;
 }
+
+/*  _____________
+   /             \
+  |    WINDOWS    |
+   \_____________/
+*/
 
 .root {
     width: 100vw;
@@ -22,6 +34,8 @@ a {
     overflow: hidden;
 }
 
+/* ===== Background ===== */
+
 #background {
     position: fixed;
     left: 50%;
@@ -30,6 +44,14 @@ a {
     max-height: 100%;
     width: auto;
 }
+
+/*  _____________
+   /             \
+  |    DESKTOP    |
+   \_____________/
+*/
+
+/* ===== Icons ===== */
 
 .desktop__icon {
     padding: 4px;
@@ -59,6 +81,8 @@ a {
     color: #fafafa;
     text-shadow: -1px -1px 0 #7270705d, 1px -1px 0 #7270705d, -1px 1px 0 #7270705d, 1px 1px 0 #7270705d;
 }
+
+/* ===== Window ===== */
 
 .desktop__window {
     width: 450px;
@@ -101,21 +125,11 @@ a {
     justify-content: center;
 }
 
-.desktop__window__content.welcome .welcome__msg > div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.desktop__window__content.welcome span {
-    font-size: 18px;
-}
-.desktop__window__content.welcome p {
-    text-align: center;
-}
-.desktop__window__content.welcome img {
-    margin-right: 10px;
-}
+/*  _____________
+   /             \
+  |    TASKBAR    |
+   \_____________/
+*/
 
 .taskbar {
     grid-area: taskbar;
@@ -127,6 +141,8 @@ a {
     grid-template-areas: ". apps menu";
     grid-template-columns: 80px 1fr 80px;
 }
+
+/* ===== Apps ===== */
 
 .taskbar__apps {
     grid-area: apps;
@@ -149,6 +165,8 @@ a {
     width: 100%;
     height: 100%;
 }
+
+/* ===== Menu ===== */
 
 .taskbar__menu {
     grid-area: menu;
