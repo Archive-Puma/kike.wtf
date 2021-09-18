@@ -104,25 +104,43 @@ a {
     background-color: #f9f9f9;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-.desktop__window__bar > img {
+.desktop__window__bar img {
     width: 18px;
     height: 18px;
-    margin-right: 5px;
 }
 
-.desktop__window__bar > span {
+.desktop__window__bar span {
     font-size: 12px;
+}
+
+.desktop__window__bar__title, .desktop__window__bar__icons {
+    display: flex;
+    align-items: center;
+}
+
+.desktop__window__bar__title img {
+    margin-right: 8px;
 }
 
 .desktop__window__content {
     height: 100%;
-    padding: 50px;
 
     display: flex;
     align-items: flex-start;
     justify-content: center;
+}
+
+.desktop__window__content.edge {
+    min-height: 600px;
+}
+
+.desktop__window__content.edge iframe {
+    border: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /*  _____________

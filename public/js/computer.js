@@ -2,6 +2,7 @@
 window.onload = () => {
     // Drag 'n drop
     let desktop = $('#desktop');
+    $('.desktop__window').draggable({ containment: desktop });
     $('.desktop__icon').each((index, element) => {
         $(element).css('top', `${10 * index + 10}px`);
         $(element).css('left', '10px');
