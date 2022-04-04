@@ -1,0 +1,33 @@
+{
+  "name": "kike.wtf",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "index.js",
+  "private": "true",
+  "scripts": {
+    "build": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cosasdepuma/kike.wtf.git"
+  },
+  "keywords": [
+    "website",
+    "portfolio",
+    "personal"
+  ],
+  "author": "Kike Fontán (@CosasDePuma)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cosasdepuma/kike.wtf/issues"
+  },
+  "homepage": "https://github.com/cosasdepuma/kike.wtf#readme",
+  "devDependencies": {
+    "grunt": "^1.4.1",
+    "grunt-cli": "^1.4.3",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^4.0.0",
+    "grunt-contrib-htmlmin": "^3.1.0",
+    "grunt-contrib-uglify": "^5.1.0"
+  }
+}
