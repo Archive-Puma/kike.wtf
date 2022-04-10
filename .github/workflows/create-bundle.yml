@@ -1,0 +1,21 @@
+name: Create a new bundle
+on:
+  push:
+    branches: [main]
+jobs:
+  zip:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v3
+      - name: Install the dependencies
+        run: npm install
+      - name: Build the project
+        run: npm run build
+      - name: Create a new compressed archive
+        run: tar -czvf server-bundle.tar.gz docker-compose.yml config/ scripts/ www/
+      - name: Upload the compressed archive to GitHub
+        uses: actions/upload-artifact@v2
+        with:
+          path: server-bundle.tar.gz
+          mime-type: application/gzip
