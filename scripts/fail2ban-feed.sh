@@ -2,7 +2,7 @@
 set -e
 
 # Variables
-outdir="/opt/data"
+outdir="$(/usr/bin/dirname "$(/usr/bin/readlink -f "${0}")")/../www/kike.wtf/dl/"
 output="${outdir}/feed.txt"
 
 # Check output directory
@@ -12,7 +12,7 @@ test -d "${outdir}" || mkdir -p "${outdir}"
 cat << EOF > "${output}"
 # --------------------------------------------------------------------
 # IP addresses launching SSH dictionary attacks against this server.
-# Last modified: $(date "+%Y-%m-%d %H:%M")
+# Last modified: $(/usr/bin/date "+%Y-%m-%d %H:%M")
 # --------------------------------------------------------------------
 EOF
 
