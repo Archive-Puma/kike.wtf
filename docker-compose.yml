@@ -28,10 +28,10 @@ services:
       - traefik.http.middlewares.security-headers.headers.forcestsheader=true
       - traefik.http.middlewares.security-headers.headers.stsincludesubdomains=true
       - traefik.http.middlewares.security-headers.headers.stspreload=true
-      - traefik.http.middlewares.security-headers.headers.stsseconds=3600
+      - traefik.http.middlewares.security-headers.headers.stsseconds=31536000
       - traefik.http.middlewares.security-headers.headers.referrerpolicy=no-referrer
       - traefik.http.middlewares.security-headers.headers.contenttypenosniff=true
-      - traefik.http.middlewares.security-headers.headers.contentsecuritypolicy=default-src 'none'; script-src 'self' www.googletagmanager.com; style-src 'self' cdnjs.cloudflare.com; img-src 'self'; font-src 'self' cdnjs.cloudflare.com;
+      - traefik.http.middlewares.security-headers.headers.contentsecuritypolicy=default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; form-action 'self'; base-uri 'none'; frame-ancestors 'none'; sandbox;
       - traefik.http.middlewares.security-headers.headers.permissionspolicy=accelerometer=(),autoplay=(),camera=(),display-capture=(),document-domain=(),encrypted-media=(),fullscreen=(),geolocation=(),gyroscope=(),magnetometer=(),microphone=(),midi=(),payment=(),picture-in-picture=(),publickey-credentials-get=(),screen-wake-lock=(),sync-xhr=(self),usb=(),web-share=(),xr-spatial-tracking=()
       - traefik.http.middlewares.security-headers.headers.accesscontrolmaxage=3600
       - traefik.http.middlewares.security-headers.headers.accesscontrolallowmethods=GET POST
