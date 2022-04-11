@@ -1,2 +1,2 @@
 # Found a bug? Contact me:
-Contact: mailto:security@kike.wtf
+Contact: security@kike.wtf
