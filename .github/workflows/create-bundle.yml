@@ -13,9 +13,9 @@ jobs:
       - name: Build the project
         run: npm run build
       - name: Create a new compressed archive
-        run: tar -czvf server-bundle.tar.gz docker-compose.yml config/ scripts/ www/
+        run: tar -czvf server-bundle.tar.gz docker-compose.yml scripts/ www/
       - name: Upload the compressed archive to GitHub
         uses: actions/upload-artifact@v2
         with:
-          path: server-bundle.tar.gz
-          mime-type: application/gzip
+          name: services-bundle.tar.gz
+          path: services-bundle.tar.gz
