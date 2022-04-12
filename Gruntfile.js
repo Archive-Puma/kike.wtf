@@ -4,6 +4,8 @@ module.exports = function (grunt) {
         pkg: grunt.file.readJSON('package.json'),
         htmlmin: {
             options: {
+                minifyCSS: true,
+                minifyJS: true,
                 removeComments: true,
                 collapseWhitespace: true
             },
