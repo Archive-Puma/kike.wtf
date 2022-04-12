@@ -12,10 +12,13 @@ jobs:
         run: npm install
       - name: Build the project
         run: npm run build
-      - name: Create a new compressed archive
-        run: tar -czvf services-bundle.tar.gz docker-compose.yml config/ scripts/ www/
+      - name: Create a new bundle directory
+        run: mkdir -p bundle
+      - name: Copy all the files and folders to the bundle directory
+        run: mv docker-compose.yml config/ scripts/ www/
       - name: Upload the compressed archive to GitHub
         uses: actions/upload-artifact@v2
         with:
-          name: services-bundle.tar.gz
-          path: services-bundle.tar.gz
+          name: services-bundle
+          path: bundle
+          if-no-files-found: error
