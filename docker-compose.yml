@@ -10,7 +10,9 @@ services:
       - traefik.http.routers.kike.entrypoints=websecure
       - traefik.http.routers.kike.tls=true
       - traefik.http.routers.kike.tls.certresolver=ssl
-      - traefik.http.routers.kike.middlewares=security-headers,compression
+      - traefik.http.routers.kike.middlewares=errorpages,security-headers,compression
+      - traefik.http.services.errorpages.loadbalancer.server.port=80
+      - traefik.http.middlewares.errorpages.errors.services=errorpages
     volumes:
       - ./www/kike.wtf:/usr/share/nginx/html:ro
     restart: unless-stopped
@@ -21,6 +23,8 @@ services:
     image: traefik:latest
     labels:
       - traefik.enable=true
+      - traefik.http.middlewares.errorpages.errors.status=400-599
+      - traefik.http.middlewares.errorpages.errors.query=/{status}.html
       - traefik.http.middlewares.compression.compress=true
       - traefik.http.middlewares.security-headers.headers.framedeny=true
       - traefik.http.middlewares.security-headers.headers.addvaryheader=true
