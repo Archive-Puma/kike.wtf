@@ -10,7 +10,7 @@ services:
       - traefik.http.routers.kike.entrypoints=websecure
       - traefik.http.routers.kike.tls=true
       - traefik.http.routers.kike.tls.certresolver=ssl
-      - traefik.http.routers.kike.middlewares=errorpages,security-headers,compression
+      - traefik.http.routers.kike.middlewares=error-pages@file,security-headers@file,compression@file
     volumes:
       - ./www/kike.wtf:/usr/share/nginx/html:ro
     restart: unless-stopped
@@ -32,48 +32,9 @@ services:
   reverse-proxy:
     container_name: reverse-proxy
     image: traefik:latest
-    labels:
-      - traefik.enable=true
-      - traefik.http.middlewares.errorpages.errors.status=400-599
-      - traefik.http.middlewares.errorpages.errors.query=/{status}.html
-      - traefik.http.middlewares.errorpages.errors.services=errorpages
-      - traefik.http.middlewares.compression.compress=true
-      - traefik.http.middlewares.security-headers.headers.framedeny=true
-      - traefik.http.middlewares.security-headers.headers.addvaryheader=true
-      - traefik.http.middlewares.security-headers.headers.browserxssfilter=true
-      - traefik.http.middlewares.security-headers.headers.forcestsheader=true
-      - traefik.http.middlewares.security-headers.headers.stsincludesubdomains=true
-      - traefik.http.middlewares.security-headers.headers.stspreload=true
-      - traefik.http.middlewares.security-headers.headers.stsseconds=31536000
-      - traefik.http.middlewares.security-headers.headers.referrerpolicy=no-referrer
-      - traefik.http.middlewares.security-headers.headers.contenttypenosniff=true
-      - traefik.http.middlewares.security-headers.headers.contentsecuritypolicy=default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; form-action 'self'; base-uri 'none'; frame-ancestors 'none';
-      - traefik.http.middlewares.security-headers.headers.permissionspolicy=accelerometer=(),autoplay=(),camera=(),display-capture=(),document-domain=(),encrypted-media=(),fullscreen=(),geolocation=(),gyroscope=(),magnetometer=(),microphone=(),midi=(),payment=(),picture-in-picture=(),publickey-credentials-get=(),screen-wake-lock=(),sync-xhr=(self),usb=(),web-share=(),xr-spatial-tracking=()
-      - traefik.http.middlewares.security-headers.headers.accesscontrolmaxage=3600
-      - traefik.http.middlewares.security-headers.headers.accesscontrolalloworiginlist=*
-      - traefik.http.middlewares.security-headers.headers.accesscontrolallowmethods=GET POST
-      - traefik.http.middlewares.security-headers.headers.customresponseheaders.Server='; DROP TABLE wtf; -- 
-      - traefik.http.middlewares.security-headers.headers.customresponseheaders.Expect-CT=max-age=86400, enforce
-    command:
-      --log.level=INFO
-      --global.checknewversion=false
-      --global.sendanonymoususage=false
-      --providers.file.directory=/etc/traefik/config
-      --providers.docker=true
-      --providers.docker.endpoint=unix:///var/run/docker.sock
-      --providers.docker.exposedbydefault=false
-      --providers.docker.watch=true
-      --entrypoints.web.address=":80"
-      --entrypoints.web.http.redirections.entrypoint.to=websecure
-      --entrypoints.web.http.redirections.entrypoint.scheme=https
-      --entrypoints.websecure.address=":443"
-      --certificatesresolvers.ssl.acme.httpchallenge=true
-      --certificatesresolvers.ssl.acme.httpchallenge.entrypoint=web
-      --certificatesresolvers.ssl.acme.email=hello@kike.wtf
-      --certificatesresolvers.ssl.acme.storage=acme.json
     volumes:
       - certs:/letsencrypt:rw
-      - ./config/traefik:/etc/traefik/config:ro
+      - ./config/traefik:/etc/traefik:ro
       - /var/run/docker.sock:/var/run/docker.sock:ro
     ports: ["80:80","443:443"]
     restart: unless-stopped

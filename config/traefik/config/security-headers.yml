@@ -1,0 +1,23 @@
+http:
+  middlewares:
+    security-headers:
+      headers:
+        frameDeny: true
+        addVaryHeader: true
+        browserXssFilter: true
+        forceSTSHeader: true
+        stsIncludeSubdomains: true
+        stsPreload: true
+        stsSeconds: 31536000
+        referrerPolicy: no-referrer
+        contentTypeNosniff: true
+        contentSecurityPolicy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; form-action 'self'; base-uri 'none'; frame-ancestors 'none';
+        permissionPolicy: accelerometer=(),autoplay=(),camera=(),display-capture=(),document-domain=(),encrypted-media=(),fullscreen=(),geolocation=(),gyroscope=(),magnetometer=(),microphone=(),midi=(),payment=(),picture-in-picture=(),publickey-credentials-get=(),screen-wake-lock=(),sync-xhr=(self),usb=(),web-share=(),xr-spatial-tracking=()
+        accessControlMaxAge: 3600
+        accessControlAllowMethods: [GET, POST]
+        accessControlAllowOriginList: ["*"]
+        customResponseHeaders:
+          Expect-CT: max-age=86400, enforce
+          Server: "'; DROP TABLE users; --"
+          X-Powered-By: Unicorns and rainbows <3
+          X-NaNaNaNaNaNaNaNa: Batman!
