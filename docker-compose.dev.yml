@@ -1,0 +1,11 @@
+---
+version: "3.7"
+services:
+  kike.wtf:
+    container_name: kike.wtf
+    image: nginx:alpine
+    volumes:
+      - ./www/kike.wtf:/usr/share/nginx/html:ro
+    restart: unless-stopped
+    depends_on: ["reverse-proxy"]
+    ports: [80:80]

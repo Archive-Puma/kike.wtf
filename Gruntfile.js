@@ -50,24 +50,7 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: 'src/',
-                    src: [
-                        '**/*.gif',
-                        '**/*.ico',
-                        '**/*.jpg',
-                        '**/*.jpeg',
-                        '**/*.png',
-                        '**/*.svg',
-                        '**/*.eot',
-                        '**/*.ttf',
-                        '**/*.woff',
-                        '**/*.mp3',
-                        '**/*.mp4',
-                        '**/*.ogg',
-                        '**/*.webm',
-                        '**/*.txt',
-                        '**/*.xml',
-                        '**/*.json',
-                    ],
+                    src: ['**/*.!(css|html|js|php)'],
                     dest: 'www/'
                 }],
             },
@@ -82,5 +65,4 @@ module.exports = function (grunt) {
 
     // Default task(s).
     grunt.registerTask('default', ['htmlmin', 'cssmin', 'uglify', 'copy']);
-
 };

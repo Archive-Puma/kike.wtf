@@ -25,6 +25,8 @@ entryPoints:
           scheme: https
   websecure:
     address: :443
+  development:
+    address: :8080
 
 certificatesResolvers:
   ssl:
