@@ -13,7 +13,7 @@ services:
       - traefik.http.routers.kike.middlewares=security-headers@file,compression@file
     volumes:
       - ./www/kike.wtf:/usr/share/nginx/html:ro
-      - ./config/nginx/kike.wtf.conf:/etc/nginx/conf.d/nginx.conf:ro
+      - ./config/nginx/kike.wtf.conf:/etc/nginx/nginx.conf:ro
     restart: unless-stopped
     depends_on: ["reverse-proxy"]
 
