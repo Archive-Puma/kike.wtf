@@ -1,7 +1,0 @@
-http:
-  middlewares:
-    error-pages:
-      errors:
-        status: [404-500]
-        query: /{status}.html
-        service: errorpages@docker

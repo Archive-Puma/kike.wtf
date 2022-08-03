@@ -15,7 +15,7 @@ http:
         permissionsPolicy: accelerometer=(),autoplay=(),camera=(),display-capture=(),document-domain=(),encrypted-media=(),fullscreen=(),geolocation=(),gyroscope=(),magnetometer=(),microphone=(),midi=(),payment=(),picture-in-picture=(),publickey-credentials-get=(),screen-wake-lock=(),sync-xhr=(self),usb=(),web-share=(),xr-spatial-tracking=()
         accessControlMaxAge: 3600
         accessControlAllowMethods: [GET, POST]
-        accessControlAllowOriginList: ["*"]
+        accessControlAllowOriginList: ["kike.wtf", "www.kike.wtf"]
         customResponseHeaders:
           Expect-CT: max-age=86400, enforce
           Server: "'; DROP TABLE users; --"

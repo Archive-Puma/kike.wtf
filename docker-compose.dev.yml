@@ -6,6 +6,7 @@ services:
     image: nginx:alpine
     volumes:
       - ./www/kike.wtf:/usr/share/nginx/html:ro
+      - ./config/nginx/kike.wtf.conf:/etc/nginx/nginx.conf:ro
     restart: unless-stopped
     depends_on: ["reverse-proxy"]
     ports: [80:80]

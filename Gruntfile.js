@@ -52,8 +52,8 @@ module.exports = function (grunt) {
                     cwd: 'src/',
                     src: [
                         '**/*.!(css|html|js|php)',
-                        '**/etc/*',
-                        '**/.well-known/*'
+                        '**/.*/*',
+                        '**/*'
                     ],
                     dest: 'www/'
                 }],
